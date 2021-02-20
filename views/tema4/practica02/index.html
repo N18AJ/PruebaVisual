@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Favicon -->
+        <link rel="icon" href="../favicon.png" type="x-icon">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            tr:hover{
+                filter: drop-shadow(2px 2px 2px #ffffff);
+            }
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema4/practica02/script.js"> </script>       
+    </head>
+
+    <body> 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 4</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 02</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    <p>
+                        1.Crea un script que permita almacenar los datos de los clientes que un gestor de banca tiene en un banco y
+                        se pueda hacer uso de esos datos para poder consultarlos. El script tiene que permitir visualizar un menú
+                        que permita hacer cualquiera de estas operaciones:<br>
+                        Opción 1: Número clientes total por gestor y número de clientes total por sede del banco<br>
+                        Opción 2: Número de clientes que tienen en sus cuentas salgo negativo<br>
+                        Opción 3: Número de clientes que tienen en sus cuentas salgo negativo<br>
+                        Opción 4: DNI, nombre y apellidos del cliente que tiene más saldo en sus cuentas en el banco.<br>
+                        Opción 5: DNI de los clientes que deben de llamar para gestiones comerciales:<br>
+                        En la sede de este banco hay 5 gestores que gestiona cada uno de ellos un número determinado de clientes.
+                        Se almacenan los siguientes datos de cada cliente: DNI, nombre, apellido1 y apellido2, número de cuenta,
+                        saldo negativo(si/no) , fecha de alta, e importe total de las cuentas.<br>
+                        &nbsp;&nbsp;• DNI, Nombre, apellido1,apellido2 y número de cuenta son Strings.<br>
+                        &nbsp;&nbsp;• Saldo negativo (si/no) es un valor booleano.<br>
+                        &nbsp;&nbsp;• Fecha de alta: tipo fecha.<br>
+                        &nbsp;&nbsp;• Importe numérico.<br>
+                        Debes de tener en cuenta:<br>
+                        &nbsp;&nbsp;• El número de clientes que tiene asignado cada gestor depende de incorporación a la plantilla del
+                        banco. Los tres primeros gestores, llevan trabajando para el banco más de 5 años, el cuarto gestor
+                        lleva trabajando 4 años y el último gestor 2 años. El número máximo de clientes por gestor es de
+                        100 si llevas más de 3 años trabajando para ellos, si lleva menos es de 50 clientes.<br>
+                        &nbsp;&nbsp;• Un cliente solo puede estar asignado a un gestor<br>
+                        &nbsp;&nbsp;• El valor de “Saldo negativo” es un valor calculado en función del importe total de las cuentas de
+                        cada cliente.<br>
+                        &nbsp;&nbsp;• Un cliente puede tener máximo 2 cuentas bancarias en la entidad.<br>
+                        &nbsp;&nbsp;• Los clientes a los que se dirigen las gestiones comerciales son los que lleven más de 2 años siendo
+                        clientes del banco desde hoy. Es decir, que su fecha de alta sea anterior al 4 de noviembre de 2020.<br>
+                        Lógica: Este script se puede crear con cualquiera de las estructuras que hemos visto en clase. 
+                    </p>
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>
