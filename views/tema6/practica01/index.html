@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            input{
+                height: 25px;
+                text-align: center;
+            }
+            
+            .boton {
+                width: 120px;
+                height: 25px;
+                text-align: center;
+                font-size: 11pt;
+                margin-left:10px;
+            }
+            p{
+                color: #F9AF9F;
+            }
+           table {
+                width: 600px;
+                border-collapse: collapse;
+            }    
+            tr{
+                border-bottom: 1px solid white;
+            }
+            .errorV{
+                font-size: 10pt;
+            }
+            
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema6/practica01/script.js"> </script>       
+    </head>
+
+    <body> 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 6</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 01</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    
+                    <table>
+                        <form action = "solucion.html"
+                              accept-charset = "UTF-8"
+                              name = "formulario0" id = "formulario0"
+                              target = "_blank"
+                              enctype = "application/x-www-form-urlencoded"
+                              onsubmit = "return validarE01()">
+                            <tr style="padding: 3px 10px; border-bottom: 3px solid white;">
+                                <th style="padding-right:25%;"></th>
+                                <th style="padding-right:20%;">Fomulario</th>
+                                <th style="padding-right:5%;"></th>
+                            </tr>
+                            <tr>
+                                <td class = "separador"><label for = "nombre">Nombre:</label></td>
+                                <td class = "separador"><input type = "text" id = "nombre" name = "nombre" placeholder = "* Introduzca nombre"></td>
+                                <td class="errorV" id="nombreError"></td>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "apellido1">1º Apellido:</label></td>
+                                <td class = "separador" ><input type = "text" id = "apellido1" name = "apellido1" placeholder = "* Introduzca 1º apellid"></td>
+                                <td class="errorV" id="apellido1Error"></td>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "apellido2">2º Apellido:</label></td>
+                                <td class = "separador"><input type = "text" id = "apellido2" name = "apellido2" placeholder = "Introduzca 2º apellido"></td>
+                                <td class="errorV" id="apellido2Error"></td>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "direccion">Dirección Postal:</label></td>
+                                <td class = "separador"><input type = "text" id = "direccion" name = "direccion" placeholder = "Introduzca dirección postal"></td>
+                                <td class="errorV" id="direccionError"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class = "separador"><label for = "telf">Código Postal:</label></td>
+                                <td class = "separador"><input type = "text" id = "postal" name = "postal" placeholder = "* XXXXX"></td>
+                                <td class="errorV" id="postalError"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class = "separador"><label for = "telf">Teléfono Fijo:</label></td>
+                                <td class = "separador"><input type = "text" id = "telf" name = "telf" placeholder = "* XXX-XXX-XXX"></td>
+                                <td class="errorV" id="telfError"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class = "separador"><label for = "telf">Teléfono Móvil:</label></td>
+                                <td class = "separador"><input type = "text" id = "telm" name = "telm" placeholder = "* XXX-XXX-XXX"></td>
+                                <td class="errorV" id="telmError"></td>
+                            </tr>
+                           
+                            <tr>
+                                <td colspan="3" style="text-align:center"><label>Estado Civil:</label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align:center">
+                                    <select name = "select" id = "selectEstado" onchange="estadoCivil()">
+                                        <option value = "ninguno">Seleciona estado</option>
+                                        <option value = "casado">Casad@</option>
+                                        <option value = "divorciado">Divorciad@</option>
+                                        <option value = "separado">Separad@</option>
+                                        <option value = "soltero">Solter@</option>
+                                        <option value = "esDificil">Es dificil</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            
+                            <tr id="casadaD" style="visibility: hidden">
+                                <td class = "separador"><label for = "boda">Boda:</label></td>
+                                <td class = "separador"><input type = "text" id = "fechaB" name = "fechaB" placeholder = "dd/mm/aaaa"></td>
+                                <td class="errorV" id="fechaBError"></td>
+                            </tr>
+                            
+                            <tr id="divorcioD" style="visibility: hidden">
+                                <td class = "separador"><label for = "divor">Divorcio:</label></td>
+                                <td class = "separador"><input type = "text" id = "fechaD" name = "fechaD" placeholder = "dd/mm/aaaa"></td>
+                                <td class="errorV" id="fechaDError"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td colspan="3" style="text-align:center"><label>Hijos:</label></td>
+                            </tr>
+                            
+                            <tr style="text-align:center">
+                                <td>
+                                    <input type="radio" id = "noR" name = "hijo" value = "noR">No
+                                <td>
+                                    <input type="radio" id = "siR" name = "hijo" value = "siR">Si
+                                </td>
+                                <td class="errorV" id="radioError"></td>
+                            </tr>
+                                                    
+                            <tr style="border-bottom: none;">
+                                <td class = "separador"><input type="checkbox" id="check">Aviso legal</td>
+                                <td class="errorV" id="checkError"></td>
+                            </tr>
+                                    
+                                    
+                            <tr style="border-bottom: none;">
+                                <th><input class = "boton" type = "submit" value = "Enviar"></th>
+                                <td></td>
+                                <th><input class = "boton" type = "reset" value = "Limpiar"></th>
+                            </tr>
+                        </form>
+                    </table>
+                    
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>

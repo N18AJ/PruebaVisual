@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            input{
+                height: 25px;
+                text-align: center;
+            }
+            
+            .boton {
+                width: 120px;
+                height: 25px;
+                text-align: center;
+                font-size: 11pt;
+                margin-left:10px;
+            }
+            p{
+                color: #F9AF9F;
+            }
+            .errorV{
+                font-size: 10pt;
+            }
+            .oligatorio{
+                background-color: #D6D6D6;
+            }
+            table {
+                width: 600px;
+                border-collapse: collapse;
+            }    
+            tr{
+                border-bottom: 1px solid white;
+            }
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema6/practica00/script.js"> </script>       
+    </head>
+
+    <body> 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 6</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 00</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    
+                    <table>
+                        <form action = "solucion.html"
+                              accept-charset = "UTF-8"
+                              name = "formulario0" id = "formulario0"
+                              target = "_blank"
+                              enctype = "application/x-www-form-urlencoded"
+                              onsubmit = "return validarE01()">
+                            <tr style="padding: 3px 10px; border-bottom: 3px solid white;">
+                                <th style="padding-right:25%;"></th>
+                                <th style="padding-right:20%;"><legend>Fomulario</legend></th>
+                                <th style="padding-right:5%;"></th>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "nombre">Nombre:</label></td>
+                                <td class = "separador"><input type = "text" class="oligatorio" id = "nombre" name = "nombre" placeholder = "* Introduzca nombre"></td>
+                                <td class="errorV" id="nombreError"></td>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "apellido1">1º Apellido:</label></td>
+                                <td class = "separador" ><input type = "text" class="oligatorio" id = "apellido1" name = "apellido1" placeholder = "* Introduzca 1º apellid"></td>
+                                <td class="errorV" id="apellido1Error"></td>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "apellido2">2º Apellido:</label></td>
+                                <td class = "separador"><input type = "text" id = "apellido2" name = "apellido2" placeholder = "Introduzca 2º apellido"></td>
+                                <td class="errorV" id="apellido2Error"></td>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "numExp">Nº Expediente:</label></td>
+                                <td class = "separador"><input type = "text" id = "numExp" name = "numExp" placeholder = "xxx" onblur="numExpe()"></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "edad">Edad:</label></td>
+                                <td class = "separador"><input type = "text" class="oligatorio" id = "edad" name = "edad" placeholder = "* xx" ></td>
+                                <td class="errorV" id="edadError"></td>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "aficcion1">Aficcion 1:</label></td>
+                                <td class = "separador"><input type = "text" id = "aficcion1" name = "aficcion1" placeholder = "Introduzca aficcion 1"></td>
+                                <td class="errorV" id="aficcion1Error"></td>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "aficcion2">Aficcion 2:</label></td>
+                                <td class = "separador"><input type = "text" id = "aficcion2" name = "aficcion2" placeholder = "Introduzca aficcion 2"></td>
+                                <td class="errorV" id="aficcion2Error"></td>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "fecha">Fecha Nacimiento:</label></td>
+                                <td class = "separador"><input type = "text" id = "fecha" name = "fecha" placeholder = "dd/mm/aaaa"></td>
+                                <td class="errorV" id="fechaError"></td>
+                            </tr>
+
+                            <tr>
+                                <td class = "separador"><label for = "telf">Teléfono Móvil:</label></td>
+                                <td class = "separador"><input type = "text" class = "oligatorio" id = "telf" name = "telf" placeholder = "* XXX-XXX-XXX"></td>
+                                <td class="errorV" id="telfError"></td>
+                            </tr>
+                            <tr style="border-bottom: none;">
+                                <th><input class = "boton" type = "submit" value = "Enviar"></th>
+                                <th></th>
+                                <th><input class = "boton" type = "reset" value = "Limpiar"></th>
+                            </tr>
+                        </form>
+                    </table>
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>
