@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            #solucion{
+                text-align:center;
+                font-size: 26pt;
+            }
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema5/practica03/script.js"> </script>       
+    </head>
+
+    <body > 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 5</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 03</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    
+                    <label>Keydown</label>
+                    <input type="text" id="key1" onkeydown="myBoton1()" required minlength="1" maxlength="255" size="14">
+                        <br>
+                    <label>Keypress</label>
+                    <input type="text" id="key2" onkeypress="myBoton2()" required minlength="1" maxlength="255" size="14">
+                        <br>
+                    <label>Keyup</label>
+                    <input type="text" id="key3" onkeyup="myBoton3()" required minlength="1" maxlength="255" size="14">
+                        
+                    <p>
+                        1. Muestra por pantalla información relacionada con la tecla que ha pulsado el usuario. 
+                    </p>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table> 
+                    
+                    <p>
+                        2. Comprueba que se ha introducido el mismo carácter en los tres inputs(keydown, keypress
+                        y keyup) comprobando las propiedades que hemos visto de los eventos de teclado (ctrlkey,
+                        code, location…) 
+                    </p>
+                    <p id="solucion"></p>
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>

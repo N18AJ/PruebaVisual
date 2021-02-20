@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            table{
+                border-collapse: collapse;
+            }
+            td{
+                border: 1px solid #ffffff;
+            }
+            article #cubo{
+                border: 1px solid #ffffff;
+                width: 500px;
+                height: 80px;
+                padding: 5px;
+                font-size: 20px;
+                background-color: #ffffff;
+            }
+            .celda{
+                float: left;
+                width: 50px;
+                height: 50px;
+            }
+            #drag1{
+                background-color: yellow;
+            }
+            #drag2{
+                background-color: blue;
+            }
+            #drag3{
+                background-color: red;
+            }
+            #drag4{
+                background-color: green;
+            }
+            #drag5{
+                background-color: yellow;
+            }
+            #drag6{
+                background-color: blue;
+            }
+            #drag7{
+                background-color: red;
+            }
+            #drag8{
+                background-color: green;
+            }
+            
+            #clase2{
+                margin-top: -100px;
+                border-collapse: collapse;
+            }	  
+            #caja1 {position: absolute; top:1200px; left: 800px; width: 50px; height: 50px; background-color: yellow;}
+            #caja5 {position: absolute; top:1270px; left: 800px; width: 50px; height: 50px; background-color: yellow;}
+
+            #caja2 {position: absolute; top:1200px; left: 875px; width: 50px; height: 50px; background-color: blue;}
+            #caja6 { position: absolute; top:1270px; left: 875px; width: 50px; height: 50px; background-color: blue;}
+
+            #caja3 {position: absolute; top:1200px; left: 950px; width: 50px; height: 50px; background-color: red;}
+            #caja7 {position: absolute; top:1270px; left: 950px; width: 50px; height: 50px; background-color: red;}
+
+            #caja4 {position: absolute; top:1200px; left: 1025px; width: 50px; height: 50px; background-color: green;}
+            #caja8 {position: absolute; top:1270px; left: 1025px; width: 50px; height: 50px; background-color: green;} 
+	
+
+            .cuatro{
+                border-radius: 100%;
+                border: 1px solid white;
+                float: left;
+                width: 50px;
+                height: 50px;
+            }
+            .pulsa{
+                border: none;
+                float: left;
+                width: 50px;
+                height: 50px;
+            }
+            #boton1, #boton2, #boton3, #boton4, #boton5, #boton6, #boton7{
+                font-family: 'Caveat', cursive;
+                font-size: 16pt;
+                padding: 5px;
+                align-content: center;
+            }
+            #carga{
+                font-size: 26pt;
+                text-align: center;
+            }
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema5/practica02/script.js"> </script>       
+    </head>
+
+    <body > 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 5</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 02</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    <p>
+                       Crea un contenedor cuadrado que cada vez que el usuario “entre a el”, se pinte una raya por cada vez que ha entrado. Es decir, si el usuario entra una vez, se pinta una raya, si entra dos veces, pinta dos rayas.
+                       Evidentemente para entrar la segunda y sucesivas veces hay que salir y volver a entrar….
+                    </p>
+                        <br>
+                        <article id="cubo" onmouseout="myBoton1()"></article>
+                        <br>
+        
+                    <p>
+                       2. Crea un documento HTML que permita encajar 8 cuadros de colores en 8 cuadros de colores vacíos. 
+                       Es decir, debe de haber 8 cuadrados blancos vacíos que se deben de rellenar con cuadrados de colores que se deben de “coger” con el ratón y llevar a uno de los cuadrados blancos/vacíos. 
+                       Debe haber dos filas y ambas filas deben de ser iguales.
+                    </p>
+                        <br>
+                    <h2>Drag and Drop</h2>
+                        <table>
+                            <tr>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" draggable="true" ondragstart="drag(event)" id="drag1"></td>
+                                <td class="celda" draggable="true" ondragstart="drag(event)" id="drag2"></td>
+                                <td class="celda" draggable="true" ondragstart="drag(event)" id="drag3"></td>
+                                <td class="celda" draggable="true" ondragstart="drag(event)" id="drag4"></td>
+                            </tr>
+                            <tr>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" draggable="true" ondragstart="drag(event)" id="drag5"></td>
+                                <td class="celda" draggable="true" ondragstart="drag(event)" id="drag6"></td>
+                                <td class="celda" draggable="true" ondragstart="drag(event)" id="drag7"></td>
+                                <td class="celda" draggable="true" ondragstart="drag(event)" id="drag8"></td>
+                            </tr>
+                        </table>  
+                    <h2>Arrastra este cuadrado: Haz un click encima de él para cogerlo y doble click para soltarlo.</h2>
+                        <div id="caja1"></div>
+                        <div id="caja5"></div>
+                        <div id="caja2"></div>
+                        <div id="caja6"></div>
+                        <div id="caja3"></div>
+                        <div id="caja7"></div>
+                        <div id="caja4"></div>
+                        <div id="caja8"></div>
+                        <br/><br/><br/><br/>
+                        <table id="clase2">
+                            <tr>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                            </tr>
+                            <tr>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                                <td class="celda" ondrop="drop(event)" ondragover="allowDrop(event)"></td>
+                            </tr>
+                        </table> 
+                    
+                    
+                    <p>
+                       3. Crea un documento HTML que contenga diferentes cuadrados que simulen el juego del cuatro en raya, pero una versión modificada. 
+                       Es decir, solo es posible hacer cuatro en raya horizontal y vertical, no en diagonal. 
+                       El script debe de identificar de alguna forma quién ha ganado y donde.
+                    </p>  
+                     
+                    <p id="carga"> </p>
+                        
+                    <table id="tabla3">
+                        <tr>
+                            <td class="pulsa"><button onclick="myBoton3(this)" id="boton1">Pulsa</button></td>
+                            <td class="pulsa"><button onclick="myBoton3(this)" id="boton2">Pulsa</button></td>
+                            <td class="pulsa"><button onclick="myBoton3(this)" id="boton3">Pulsa</button></td>
+                            <td class="pulsa"><button onclick="myBoton3(this)" id="boton4">Pulsa</button></td>
+                            <td class="pulsa"><button onclick="myBoton3(this)" id="boton5">Pulsa</button></td>
+                            <td class="pulsa"><button onclick="myBoton3(this)" id="boton6">Pulsa</button></td>
+                        </tr>
+                        <tr>
+                            <td id="celda05" class="cuatro"></td>
+                            <td id="celda15" class="cuatro"></td>
+                            <td id="celda25" class="cuatro"></td>
+                            <td id="celda35" class="cuatro"></td>
+                            <td id="celda45" class="cuatro"></td>
+                            <td id="celda55" class="cuatro"></td>
+                        </tr>
+                        <tr>
+                            <td id="celda04" class="cuatro"></td>
+                            <td id="celda14" class="cuatro"></td>
+                            <td id="celda24" class="cuatro"></td>
+                            <td id="celda34" class="cuatro"></td>
+                            <td id="celda44" class="cuatro"></td>
+                            <td id="celda54" class="cuatro"></td>
+                        </tr>
+                        <tr>
+                            <td id="celda03" class="cuatro"></td>
+                            <td id="celda13" class="cuatro"></td>
+                            <td id="celda23" class="cuatro"></td>
+                            <td id="celda33" class="cuatro"></td>
+                            <td id="celda43" class="cuatro"></td>
+                            <td id="celda53" class="cuatro"></td>
+                        </tr>
+                        <tr>
+                            <td id="celda02" class="cuatro"></td>
+                            <td id="celda12" class="cuatro"></td>
+                            <td id="celda22" class="cuatro"></td>
+                            <td id="celda32" class="cuatro"></td>
+                            <td id="celda42" class="cuatro"></td>
+                            <td id="celda52" class="cuatro"></td>
+                        </tr>
+                        <tr>
+                            <td id="celda01" class="cuatro"></td>
+                            <td id="celda11" class="cuatro"></td>
+                            <td id="celda21" class="cuatro"></td>
+                            <td id="celda31" class="cuatro"></td>
+                            <td id="celda41" class="cuatro"></td>
+                            <td id="celda51" class="cuatro"></td>
+                        </tr>
+                        <tr>
+                            <td id="celda00" class="cuatro"></td>
+                            <td id="celda10" class="cuatro"></td>
+                            <td id="celda20" class="cuatro"></td>
+                            <td id="celda30" class="cuatro"></td>
+                            <td id="celda40" class="cuatro"></td>
+                            <td id="celda50" class="cuatro"></td>
+                        </tr>
+                    </table>
+            </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            
+            td{
+               border: 1px solid #ffffff;
+               height: 100px;
+            }
+            button {
+                width: 185px;
+                height: 30px;
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 12pt;
+                margin-left:10px;
+            }
+            .cronoS{
+                border: 1px solid #ffffff;
+                width: 500px;
+                height: 200px;
+            }
+            .celda{
+                background-color: #ffffff;
+            }
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema5/practica01/script.js"> </script>       
+    </head>
+
+    <body onmousemove="myBoton8()"> 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 5</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 01</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    <p>
+                       1. Un párrafo con el texto que tu quieras y que al pulsar sobre él, 
+                       se cambie el texto en el que has pulsado por la palabra ¡PULSADO!
+                    </p>
+                        <br>
+                        <p id="muestra" onclick="myBoton1()">
+                            Este texto se cambiara al hacer click.
+                        </p>
+                        <br>
+        
+                    <p>
+                       2. Un botón que ponga “Púlsame” y que al pulsarlo aparezca debajo de éste, la palabra ¡PULSADO!
+                    </p>
+                        <br>
+                        <button type="button" onclick="myBoton2()">Pulsame</button>
+                        <p id="muestra2">  </p>
+                        <br>
+                        
+                    <p>
+                       3. Un párrafo que al pasar por encima con el ratón, se cambie el color de la fuente a rojo.
+                    </p>
+                        <br>
+                        <p id="muestra3" onmousemove="myBoton3()">
+                            Este texto deberia de cambiar de color al pasar sobre el.
+                        </p>
+                        <br>
+                    
+                    <p>
+                       4. Una imagen que al ponerse encima de ella, se cambie a otra imagen del mismo tamaño y
+                       al salir “de ella” vuelva a la imagen inicial.
+                    </p>  
+                        <img src="../../../assets/images/tema5/practica01/img1.png" 
+                            onmouseover="this.src='../../../assets/images/tema5/practica01/img2.png';"
+                            onmouseout="this.src='../../../assets/images/tema5/practica01/img1.png';"
+                        title="Luna" alt="Luna" width="300">
+                        <br>
+                        
+                    <p>
+                       5. Un contenedor que al entrar dentro de él cuente cuantos segundos está dentro. 
+                       Cuando el puntero del ratón salga del contenedor que se muestre por pantalla en el propio documento HTML los segundos que ha estado “dentro”.
+                    </p>
+                        <br>
+                        <article class="cronoS" onmouseover="myBoton51()" onmouseout="myBoton52()"></article>
+                        <p id="muestra5">  </p>
+                        <br>
+                        
+                    <p>
+                       6. Una tabla con 4 celdas y que cada una cambie de color al pasar por encima de ella. 
+                       Los colores pueden ser aleatorios
+                    </p>   
+                    <table>
+                        <tr>
+                            <td onmouseover="myBoton6(this)"> </td>
+                            <td onmouseover="myBoton6(this)"> </td>
+                            <td onmouseover="myBoton6(this)"> </td>
+                            <td onmouseover="myBoton6(this)"> </td>
+                        </tr>
+                    </table>
+                    
+                    <p>
+                       7. Un contenedor que muestre la letra A y mientras se esté dentro del contenedor se vayan visualizando de forma secuencial el 
+                       resto de letras del abecedario hasta que el usuario salga del contenedor con el ratón.
+                    </p>
+                        <br>
+                        <article class="cronoS" onmouseover="myBoton71()" onmouseout="myBoton72()" id="muestra7"> A </article>
+
+                        <br>
+                    
+                    <p>
+                       8. Muestra en el documento HTML las coordenadas que tiene el ratón en cada momento, 
+                       de forma que si el ratón se mueve, cambien continuamente.
+                    </p>  
+                        <br>
+                        <span id="coordenadas"> Posición x: 0  - Posición y: 0 </span>
+                        <br>
+                        
+                    <p>
+                       9. Crea un contenedor que tenga dentro 4 divisiones coloreadas de blanco. 
+                        Cuando el usuario entre a una de las divisiones con el ratón, 
+                        ésta se debe de colorear de un color y cuando salga de ella, 
+                        debe de aparecer escrita la palabra “Ok” en esa división. 
+                        Si el color de fondo es muy claro, pon un color de fuente oscura, 
+                        si el color de fondo es oscuro, pon una fuente clara…
+                    </p>  
+                        <br> 
+                        <table>
+                        <tr>
+                            <td class="celda" onmouseover="myBoton91(this)" onmouseout="myBoton92(this)"></td>
+                            <td class="celda" onmouseover="myBoton91(this)" onmouseout="myBoton92(this)"></td>
+                        </tr>
+                        <tr>
+                            <td class="celda" onmouseover="myBoton91(this)" onmouseout="myBoton92(this)"></td>
+                            <td class="celda" onmouseover="myBoton91(this)" onmouseout="myBoton92(this)"></td>
+                        </tr>
+                    </table>
+                        
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Favicon -->
+        <link rel="icon" href="../favicon.png" type="x-icon">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            tr:hover{
+                filter: drop-shadow(2px 2px 2px #ffffff);
+            }
+            button {
+                width: 185px;
+                height: 30px;
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 12pt;
+                margin-left:10px;
+            }
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema5/practica00/script.js"> </script>       
+    </head>
+
+    <body> 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 5</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 00</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    <p>
+                       1. 7 botones, cada botón debe de lanzar un evento de ratón de los vistos en clase. El texto del
+                        botón debe de ser identificativo. Crea una función para cada botón y en consecuencia para
+                        cada evento (mousedown, mouseup, click, mousedown, mouseup, click, dbclick).
+                    </p>
+                    <br>
+                    <button type="button" onclick="myBoton1()">Click</button>
+                    <br>
+                    <button type="button" ondblclick="myBoton2()">DbClick</button>
+                    <br>
+                    <button type="button" onmousedown="myBoton3()">MouseDown</button>
+                    <br>
+                    <button type="button" onmouseout="myBoton4()">MouseOut</button>
+                    <br>
+                    <button type="button" onmouseover="myBoton5()">MouseOver</button>
+                    <br>
+                    <button type="button" onmouseup="myBoton6()">MouseUp</button>
+                    <br>
+                    <button type="button" onmousemove="myBoton7()">MouseMove</button>
+                    <br>
+                   
+                    <p>
+                       2. Utiliza las funciones de antes pero aplicándolas a diferentes documentos HTML (párrafo, h2,
+                        div, section, article, etc..). Un evento por elemento.
+                    </p>
+                    <h2 onclick="myBoton1()">Click</h2>
+                    <h3 ondblclick="myBoton2()">DbClick</h3>
+                    <p onmousedown="myBoton3()">
+                       MouseDown --- Click derecho o izquierdo.
+                    </p>
+                    <br>
+                    <p onmouseout="myBoton4()">
+                       MouseDown --- Estamos dentro.
+                    </p>
+                    <br>
+                    <p onmouseover="myBoton5()">
+                       MouseOut --- Estamos fuera.
+                    </p>
+                    <br>
+                    <p onmouseup="myBoton6()">
+                       MouseUp --- Click y fuera.
+                    </p>
+                    <br>
+                    <img onmousemove="myBoton7()" src="../../../assets/images/tema5/practica00/img1.jpg" title="Arbol" alt="Arbol" width="300">
+                    <p>
+                       3. Crea 4 párrafos diferentes y aplica varios manejadores de eventos por cada párrafo teniendo
+                        en cuenta las preferencias. Tendrás que utilizar diferentes formas de acceder al elemento
+                        que va a cambiar al interactuar con el ratón.
+                    </p>
+                   <br>
+                    <p ondblclick="myBoton2()"  onmouseover="myBoton5()">
+                      Pueba doble click y SALIDA.
+                    </p>
+                    <br>
+                    <p onclick="myBoton1()" onmouseout="myBoton4()">
+                       Pueba con click y ENTRAR.
+                    </p>
+                    <br>
+                    <p onmouseout="myBoton4()" onmouseover="myBoton5()">
+                       Puebla a Entrar y Salir.
+                    </p>
+                    <br>
+                    <p onmousemove="myBoton7()" onmousedown="myBoton3()">
+                       Movimiento libre y click con cualquier tecla.
+                    </p>
+                    
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>

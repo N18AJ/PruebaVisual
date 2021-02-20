@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            table{
+                float:left;
+                width:40%;
+                margin-left: 20px;
+                
+            }
+            td{
+                font-weight: bold;
+                font-size: 30pt;
+                width: 16vw;
+                height: 22vh;
+                text-align: center;
+            }
+
+            #fondoOpciones{
+                float:right;
+                width:40%;
+                height:23vh;
+            }
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema5/practica06/script.js"> </script>       
+    </head>
+
+    <body onload="cargar()"> 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 5</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 06</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+
+                    <h1>Tres en raya</h1>
+                    <table>
+                        <tr>
+                            <td id="1" >-</td>
+                            <td id="2" >-</td>
+                            <td id="3" >-</td>
+                        </tr>
+                        <tr>
+                            <td id="4" >-</td>
+                            <td id="5" >-</td>
+                            <td id="6" >-</td>
+                        </tr>
+                        <tr>
+                            <td id="7" >-</td>
+                            <td id="8" >-</td>
+                            <td id="9" >-</td>
+                        </tr>
+                    </table>
+
+
+                    <article id="fondoOpciones">
+                        <h2>Editar plantilla</h2>
+                        Color de las casillas = 
+                        <input id="colorFondoCasillas" type="color" value="#ABB8F9">
+                        <br>
+                        Color del Jugador 1 =
+                        <input id="colorJugador1" type="color" value="#FF0F00">
+                        <br>
+                        Color del Jugador 2 =
+                        <input id="colorJugador2" type="color" value="#0743FF">
+                        <br>
+                        Color de las casillas vacías =
+                        <input id="colorCasillasVacias" type="color" value="#ffffff">
+                        <br>
+                        Color serie ganadora =
+                        <input id="colorGanador" type="color" value="#FFF300">
+                        <br>
+
+                    </article>
+                        <p id="muestraGanador"></p>
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>

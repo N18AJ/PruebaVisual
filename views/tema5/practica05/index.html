@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema5/practica05/script.js"> </script>       
+    </head>
+
+    <body > 
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 5</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 05</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+ 
+                    <p>
+                        1. Al hacer clic sobre cada imagen se tienen que intercambiar, es decir, si haces clic sobre la
+                            primera imagen tiene que aparece en el sitio de la primera imagen, la segunda imagen y
+                            así con todas. Qué imagen se cambia por cual, establécelo tu. Intenta que la lógica del
+                            ejercicio sea lo más sencilla posible y recuerda que no puede visualizarse nunca una
+                            imagen dos veces.
+                    </p>
+                        <img id="ejer1" src="../../../assets/images/tema5/practica05/img1.png" onclick="intercambio(0)" onmouseover="bordeSi(this)" onmouseout="bordeNo(this)" width="100">
+                        <img id="ejer2" src="../../../assets/images/tema5/practica05/img2.jpg" onclick="intercambio(1)" onmouseover="bordeSi(this)" onmouseout="bordeNo(this)" width="100">
+                        <img id="ejer3" src="../../../assets/images/tema5/practica05/img3.png" onclick="intercambio(2)" onmouseover="bordeSi(this)" onmouseout="bordeNo(this)" width="100">
+                        <img id="ejer4" src="../../../assets/images/tema5/practica05/img4.jpg" onclick="intercambio(3)" onmouseover="bordeSi(this)" onmouseout="bordeNo(this)" width="100">
+   
+                    <p>
+                        2. Añade a tu documento HTML, un input y un textarea. Cuando el usuario escriba un texto en estos dos elementos,
+                        muestra el texto que ha escrito en el propio documento HTML a modo de resumen visualizando también el código de cara carácter.
+                        <br>
+                        Cuando el usuario intente seleccionar el texto en ambos elementos, debes de mostrarle un texto alertándolo de que puede perder información.
+                        <br>
+                        Si el usuario cambia el texto inicial que estaba (A B C D), debe de aparecer información por pantalla informando de esto y visualizando el nuevo contenido.
+                        <br>
+                        Añade un botón “Enviar” y un botón “Reset” a tu documento HTML y cuando se pulsen se lancen los diferentes eventos relacionados (submit y reset).
+                    </p>
+                        <form>
+                            <label>Input: </label><input type="text" id="input" onkeyup="tipoCaracter(this)"/><br>
+                            <p id="areaInput"></p>
+                            <label>Textarea: </label><textarea id="area" onkeyup="tipoCaracter(this)"></textarea><br>
+                            <p id="areaTexArea"></p>
+                            <button type="submit">Enviar</button>
+                            <button type="reset" onclick="clean()">Reset</button>
+                        </form>
+
+                    <p>
+                        3. Añade un input a tu documento HTML, cuando el usuario esté escribiendo en el input,
+                            debe de aparecer el texto que ha escrito en minúsculas. Cuando el usuario se salga del
+                            input debe cambiarse este texto (sea el que sea) a mayúsculas. Si el usuario vuelve a entrar
+                            al input a cambiar algo, debe de aparecer otra vez en minúsculas.
+                    </p>
+                        <label>Cambio de tipo: </label>
+                        <input type="text" onfocus="myMin(this)" onblur="myMay(this)"/>
+
+                    <p>
+                        4.  Añade a las imágenes del principio la funcionalidad de que cuando el usuario este encima
+                            de una imagen, esta imagen se visualice con un borde negro. Hazlo con todas las imágenes.
+                    </p>
+                    <br>
+                    <p>
+                        5. Añade un párrafo al documento HTML que al ponerse encima de el, se cambie el color de
+                        la fuente a verde y cuando el usuario quite el ratón de ahí el color de la fuente pase a
+                        negro.. 
+                    </p>
+                        <p id="texto" onmouseover="textoVerde()" onmouseout="textoNegro()">Texto para cambio de color</p>
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>

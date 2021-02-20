@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            #key5{
+                background-color: red;
+            }
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema5/practica04/script.js"> </script>       
+    </head>
+
+    <body > 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 5</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 04</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    
+                    <label>Keydown</label>
+                    <input type="text" id="key1" onkeydown="myBoton1()" required minlength="1" maxlength="255" size="14">
+                        <br>
+                    <label>Keypress</label>
+                    <input type="text" id="key2" onkeypress="myBoton2()" required minlength="1" maxlength="255" size="14">
+                        <br>
+                    <label>Keyup</label>
+                    <input type="text" id="key3" onkeyup="myBoton3()" required minlength="1" maxlength="255" size="14">
+                        
+                    <p>
+                        1. Crea un documento HTML con tres inputs y debes de permitir que solo se introduzcan
+                        números de 2 cifras de en las tres casillas. Cuando estén introducidos los números
+                        comprueba que los valores son iguales y muestra la información en el propio documento.
+                    </p>
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table> 
+                    
+                    <p id="solucion"></p>
+                    
+                    <p>
+                        2. Añade al documento HTML un input que permita introducir texto. Cuando el usuario
+                        introduzca las letras: a,e,i,o y u no permitas que se escriban y si escribe esas letras en
+                        mayúsculas si deben de aparecer 
+                    </p>
+                        <label>Escriba Texto: </label>
+                        <input type="text" id="key4" onkeyup="myBoton4()">
+                    <p>
+                        3. Añade un input normal pero que sea “tipo password” visible. Es decir que un usuario
+                        escriba una contraseña que se vea y que solo sea válida si el usuario ha escrito una
+                        palabra de 4 letras.
+                        <br>
+                        a. Si la palabra está bien escrita (es decir, tiene cuatro letras), debe aparecer dentro
+                            del input en mayúsculas y el fondo del input relleno de verde.
+                        <br>
+                        b. Mientras la palabra no sea correcta, el color del relleno del input debe de ser rojo.
+                    </p>
+                        <label>Escriba Password: </label>
+                        <input type="text" id="key5" onkeyup="myBoton5()">
+                    
+                    <p>
+                        4.  Simula un “programa de aprender mecanografía”. Es decir, que el usuario tenga que
+                        escribir en tantos recuadros como letras tenga que escribir, las letras adecuadas. Es
+                        decir, marca un patrón “asdf” y el usuario tiene que escribir esas letras, cada una en
+                        un recuadro diferente. Cuando lo haya escrito bien todo aparezca el texto “Reto
+                        superado” de forma llamativa.
+                    </p>
+                        <label>a</label>
+                       <input type="text" id="key6" onkeyup="myBoton6()" style="width:30px">
+                       <label>s</label>
+                       <input type="text" id="key7" onkeyup="myBoton6()" style="width:30px">
+                       <label>d</label>
+                       <input type="text" id="key8" onkeyup="myBoton6()" style="width:30px">
+                       <label>f</label>
+                       <input type="text" id="key9" onkeyup="myBoton6()" style="width:30px">
+                       <label>j</label>
+                       <input type="text" id="key10" onkeyup="myBoton6()" style="width:30px">
+                       <label>k</label>
+                       <input type="text" id="key11" onkeyup="myBoton6()" style="width:30px">
+                       <label>l</label>
+                       <input type="text" id="key12" onkeyup="myBoton6()" style="width:30px">
+                       <label>ñ</label>
+                       <input type="text" id="key13" onkeyup="myBoton6()" style="width:30px">
+
+                        
+                        <p id="teclas"></p>
+                        
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>
