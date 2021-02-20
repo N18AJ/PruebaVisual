@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Favicon -->
+        <link rel="icon" href="../favicon.png" type="x-icon">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            tr:hover{
+                filter: drop-shadow(2px 2px 2px #ffffff);
+            }
+        </style>
+<!-- JS -->        
+        <script type="text/javascript"> 
+        /*Números*/
+        /*Crea un programa en el que crees 5 variables numéricas
+         * (entero, decimal, científico, octal y hexadecimal).  */
+            //variables
+            var x = 1356;
+            var y = 34.3;
+            var z = 135e6;
+            var a = 01357;
+            var b = 0x1354;
+            //Mostramos los resultados por pantalla
+            alert("Numero entero " + x);
+            alert("Numero decimal " + y);
+            alert("Numero exponencial " + z);
+            alert("Numero octal " + a);
+            alert("Numero hexadecimal " + b);
+    
+        /*Cadenas*/
+        /*Crea un programa en el que crees 4 variables de tipo cadena con los 
+         * siguientes valores: “Hola”, “5”, “7”, “24” y “Adiós”. */
+            //variables
+            var x = "Hola";
+            var y = "5";
+            var z = "7";
+            var a = "24";
+            var b = "Adios";
+            var c = "I'm a student";
+            //Muestra de variable
+            alert(c);
+            //Muestra de variables con salto \n
+            alert(x + "\n" + b);
+            //Concatenado de cadenas
+            alert(y + z);
+            //Concatenado continuo -- Sin espacios.
+            alert(x + y + z + a + b);
+        </script>        
+    </head>
+
+    <body> 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 2</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 00</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    <p>
+                        1. Crea un programa en el que crees 5 variables numéricas (entero, decimal, científico, octal y hexadecimal). <br>
+                        • Asigna a las variables los siguientes números: 1356, 34.3, 135e6, 01357 y 0x1354.<br>
+                        • Muestra con 5 alerts el valor de las variables utilizando la siguiente sentencia:<br>
+                            alert (“Número entero” + entero)
+                    </p>
+                    <p>
+                        2. Crea un programa en el que crees 4 variables de tipo cadena con los siguientes valores: “Hola”, “5”, “7”, “24” y “Adiós”.<br> 
+                        • Muestra en un alert una frase que incluya comillas simples.<br>
+                        • Muestra en un alert que ocupe una línea las variables 1º y 4º separadas por un salto de línea.<br>
+                        • Muestra en un alert la suma de las variables 2º y 3º.<br>
+                        • Muestra en un alert la suma de todas las variables.
+                    </p>
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>

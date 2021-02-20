@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: verdana, sans-serif;
+}
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 10fr 80fr 10fr;
+    gap: 10px;
+}
+header{
+    /*grid-column-start: 1;
+    grid-column-end: 4;*/
+    padding: 5px;
+    grid-column: 1 /-1;
+    grid-row: 1;
+    background-color: #FFFFFF;
+    height: 85px;;
+}
+
+/* MENU*/
+nav{
+    margin-left: 45px;
+    top: 45px;
+    position:relative;
+}
+
+.btn, .barras{
+    display:none;
+}
+
+.lbtn{
+    width: 40px;
+    height: 38px;
+    display: block;
+    background-color:#FFFFFF;
+    border: 1px solid black;
+}
+.lbtn::before{
+    content: "";
+    display: block;
+    width: 34px;
+    height: 6px;
+    background-color: black;
+    position: relative;
+    top: 6px;
+    left: 3px;
+    box-shadow: 0px 10px black,
+                0px 20px black; 
+}
+
+.menu{
+    background-color:#FFFFFF;
+    display:flex;
+    position:absolute;
+    left:-500px;
+    transition:ease-in-out 1500ms;
+
+    flex-direction:column;
+}
+
+.menu li{
+    flex:0 0 auto;
+    list-style:none;
+    position:relative;
+}
+
+.menu li a{
+    color:black;
+    display:flex;
+    text-decoration:none;
+    padding:10px;
+}
+
+a:hover{
+    background-color:#CFE3F7;
+}
+.close{
+    display:flex;
+    justify-content:flex-end;
+    width: 150px;
+}
+
+.sbm1{
+    display:none;
+}
+    .btn:checked ~ .menu{
+        left:0;
+    }
+    
+    .menu li:hover .sbm1{
+        display:block;
+        margin-left:25px;
+    }
+
+/*ICONOS*/
+    /*HEADER*/
+.icono_logo{
+    position: absolute;
+    top: 15px;
+    right: 50%;
+}
+    .icono_logo:hover{
+        width: 80px;
+    }
+.icono_user{
+    position: absolute;
+    top: 45px;
+    right: 120px;
+}
+    .icono_user:hover{
+        width: 40px;
+    }
+.icono_carro{
+    position: absolute;
+    top: 45px;
+    right: 50px;
+}    
+    .icono_carro:hover{
+        width: 40px;
+    }
+    /*FOOTER*/ 
+.icono_total{
+    position: absolute;
+    bottom: 20px;
+    right: 45%;
+    margin: 10px;
+    background-color: #FFFFFF;
+}       
+    .icono_twitter:hover{
+        width: 35px;
+        background-color: #FFFFFF;
+    }
+    .icono_insta:hover{
+        width: 35px;
+        background-color: #FFFFFF;
+    }
+    .icono_face:hover{
+        width: 35px;
+        background-color: #FFFFFF;
+    }
+    .icono_gmail:hover{
+        width: 35px;
+        background-color: #FFFFFF;
+    }
+    .icono_movil:hover{
+        width: 35px;
+        background-color: #FFFFFF;
+    }
+.icono_left{
+    position: absolute;
+    bottom: 15px;
+    left:45px;
+    width: 35%;
+    font-size: 10pt;
+} 
+.icono_right{
+    position: absolute;
+    bottom: 15px;
+    right: 45px;
+    width: 35%;
+    font-size: 10pt;
+}     
+
+.left{
+    /*grid-column-start: 1;
+    grid-column-end: 2;*/
+    padding: 5px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color:#CFE3F7;
+}
+article{
+    /*grid-column-start: 2;
+    grid-column-end: 3;*/
+    padding: 5px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #FFFFFF;
+}
+.right{
+    /*grid-column-start: 3;
+    grid-column-end: 4;*/
+    padding: 5px;
+    grid-column: 3/-1;
+    grid-row: 2/3;
+    background-color:#CFE3F7;
+}
+footer{
+    /*grid-column-start: 1;
+    grid-column-end: 4;*/
+    padding: 5px;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    height: 80px;
+    background-color: #FFFFFF;
+    position: relative;
+}    
+
+/** CONTENIDO **/
+
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 8%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.img{
+    height: 14vw;
+    border: 3px solid black;
+}
+
+.mc{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 1px;
+    margin-right: 12px;
+}
+
+.titulo, p{
+    position: absolute;
+    top: -30px;
+    opacity: 0;
+}
+
+.mc:hover .titulo{
+    transition: 0.4s;
+    top: 20px;
+    color: black;
+    opacity: 100;
+    background-color: #CFE3F7;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+}

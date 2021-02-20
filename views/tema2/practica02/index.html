@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Favicon -->
+        <link rel="icon" href="../favicon.png" type="x-icon">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            tr:hover{
+                filter: drop-shadow(2px 2px 2px #ffffff);
+            }
+        </style>
+<!-- JS -->        
+        <script type="text/javascript"> 
+	
+        /*Ejercicio 1*/
+        /*Crea un script que permita visualizar por pantalla la siguiente 
+		operación matemática: (34 + 5)*3/2y además muestre el resultado.
+		Utliza alert();*/
+            //variables
+            var x = (34 + 5)*3 / 2;
+            //Mostramos los resultados por pantalla
+            alert("La operación (34+5)*3/2 = " + x);
+			
+			/*Ejercicio 2*/
+        /*Crea un script que permita comprobar si un número
+		que introduce un usuario es par o no.*/
+            //Petición
+            var a = parseInt(prompt("Introduce un número: "));
+			//Condición para resultado
+			var b =(a % 2 ==00) ? "Par" : "Impar" ;
+            //Mostramos los resultados por pantalla
+            alert("El número " + a + " es: " + b);
+			
+		/*Ejercicio 3*/
+        /*Pídele al usuario un número, súmale 5 e 
+		increméntale 1 al resultado. Muéstralo.*/
+            //Petición
+            var c = parseInt(prompt("Introduce un número: "));
+			//Cambio tipo cadena a entero
+			var d = parseInt(c) + 5;
+			//Incremento 1
+			var e = ( ++d);
+            //Mostramos los resultados por pantalla
+            alert("Nº introducido " + c + " + 5 + Δ 1 --  El resultado es = " + e);
+	
+		/*Ejercicio 4*/
+        /*Pídele al usuario que introduzca un número y muestra por 
+		pantalla ese número decrementado en 1.*/
+            //Petición
+            var f = parseInt(prompt("Introduce un número: "));
+			//Decremento 1
+			var g = ( --f);
+            //Mostramos los resultados por pantalla
+            alert("Nº introducido " + f + " ▼ 1 -- El resultado es = " + g);	
+			
+		/*Ejercicio 5*/
+        /*Pide al usuario su edad y si es mayor de edad que aparezca por pantalla 
+		“Eres mayor de edad” y si no lo es, “Eres menor de edad”.*/
+            //Petición
+            var h = parseInt(prompt("Introduce tu edad: "));
+			//Condición para resultado
+			var i =(h >= 18 ? "Eres mayor de edad" : "No eres mayor de edad");
+            //Mostramos los resultados por pantalla	
+			alert("Edad = " + h + " -- " + i);
+			
+		/*Ejercicio 6*/
+        /*Pide al usuario dos números y comprueba si esos dos números son iguales con un operador. 
+		Si son iguales muestra por pantalla, "son iguales", sino lo son,
+		muestra por pantalla "son distintos"*/
+            //Petición
+            var j = parseInt(prompt("1º número: "));
+			var k = prompt("2º número: ");
+			//Condición para resultado
+			var l =(j === k ? "Son iguales" : "Son distintos");
+            //Mostramos los resultados por pantalla	
+			alert("Nº 1 = " + j + " y Nº 2 = " + k + " -- " + l);	
+			
+		/*Ejercicio 7*/
+        /*Pide al usuario dos números y comprueba si esos dos números son iguales con un operador. 
+		Si son iguales muestra por pantalla, "son iguales", sino lo son,
+		muestra por pantalla "son distintos"*/
+            //Petición
+            var m = parseInt(prompt("1º número: "));
+			var n = parseInt(prompt("2º número: "));
+			//Operación
+			var ñ =( m + n);
+            //Mostramos los resultados por pantalla	
+			alert("Nº 1 = " + m + " + Nº 2 = " + n + " = " + ñ);	
+			
+		/*Ejercicio 8*/
+        /*Crea tres variables A=0, B=1 y C=0 y haz un script que muestro por pantalla true o	
+		false teniendo en cuenta el resultado de los valores lógicos*/
+            //Variable
+            var A = 0;
+			var B = 1;
+			var C = 0;
+			//Mostramos los resultados por pantalla	
+			alert("(A AND B) == (A AND C) es: " + ((A && B) == (A && C)));
+			alert("(A OR B) != (A AND C) es: " + ((A || B) != (A && C)));
+        </script>        
+    </head>
+
+    <body> 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 2</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 02</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                        <p>
+                            1. Crea un script que permita visualizar por pantalla la siguiente operación matemática:<br>
+                        (34 + 5)*3/2 y además muestre el resultado. Utliza alert();
+                        </p>
+                        <p>
+                        2. Crea un script que permita comprobar si un número que introduce un usuario es par o no.
+                        </p>
+                        <p>
+                        3. Pídele al usuario un número, súmale 5 e increméntale 1 al resultado. Muéstralo.
+                        </p>
+                        <p>
+                        4. Pídele al usuario que introduzca un número y muestra por pantalla ese número decrementado en 1.
+                        </p>
+                        <p>
+                        5. Pide al usuario su edad y si es mayor de edad que aparezca por pantalla “Eres mayor de edad” y si no lo es, “Eres menor de edad”.
+                        </p>
+                        <p>
+                        6. Pide al usuario dos números y comprueba si esos dos números son iguales con un operador. <br>
+                        Si son iguales muestra por pantalla, son iguales, sino lo son, muestra por pantalla “son distintos”.
+                        </p>
+                        <p>
+                        7. Pide al usuario un número y almacénalo en una variable, pídelo otro número y suma éste número al primero que has pedido.<br>
+                        Muestra por pantalla la suma de ambos números.
+                        </p>
+                        <p>
+                            8. Crea tres variables A=0, B=1 y C=0 y haz un script que muestro por pantalla true o false teniendo en cuenta el resultado de los valores lógicos<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; a. (A AND B) es igual a (A AND C) <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; b. (A OR B) es distinto a (A AND C)
+                        </p>
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>
