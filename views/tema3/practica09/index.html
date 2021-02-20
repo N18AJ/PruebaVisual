@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Favicon -->
+        <link rel="icon" href="../favicon.png" type="x-icon">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            tr:hover{
+                filter: drop-shadow(2px 2px 2px #ffffff);
+            }
+            button {
+                width: 185px;
+                height: 30px;
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 12pt;
+                margin-left:10px;
+            }
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema3/practica09/script.js"> </script>       
+    </head>
+
+    <body> 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 3</a></li>
+                    </ul>
+                </nav>
+                <article id="cont1">
+                    <header class="major">
+                        <h3>Practica 09</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    
+                    <h2> Botones </h2>
+                        <button type="button" onclick="myBoton1()">Tipografia</button>
+                        <button type="button" onclick="myBoton2()">Id Navegadores</button>  
+                    
+                    <h2> Objeto navigator </h2>
+                        <ol id="navegadores">
+                            <li>Chrome</li>
+                            <li>Firefox</li>
+                            <li>Opera</li>
+                        </ol>
+                    <h3>Propiedades appCodeName</h3>
+                        <ol class="lista">
+                            <li>Mozilla</li>
+                            <li>Mozilla</li>
+                            <li>Mozilla</li>
+                        </ol>
+                    <button type="button" onclick="codeName()">CodeName</button>
+                    <h3>Propiedades appName</h3>
+                        <ol class="lista">
+                            <li>Netscape</li>
+                            <li>Netscape</li>
+                            <li>Netscape</li>
+                        </ol>
+                    <button type="button" onclick="nameNav()">Name</button>
+                    <h3>Propiedades appVersion</h3>
+                        <ol class="lista">
+                            <li>5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36</li>
+                            <li>5.0 (Windows)</li>
+                            <li>5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 OPR/72.0.3815.320</li>
+                        </ol>
+                    <button type="button" onclick="version()">Version</button>
+                    <h3>Propiedades cookieEnabled</h3>
+                        <ol class="lista">
+                            <li>true</li>
+                            <li>true</li>
+                            <li>true</li>
+                        </ol>
+                    <button type="button" onclick="cookieNav()">Cookie</button>
+                    <h3>Propiedades geolocation</h3>
+                        <ol class="lista">
+                            <li>[object Geolocation]</li>
+                            <li>[object Geolocation]</li>
+                            <li>[object Geolocation]</li>
+                        </ol>
+                    <button type="button" onclick="geo()">Geolocation</button>
+                    <h3>Propiedades language</h3>
+                        <ol class="lista">
+                            <li>es-ES</li>
+                            <li>es-ES</li>
+                            <li>es-ES</li>
+                        </ol>
+                    <button type="button" onclick="idioma()">Language</button>
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>

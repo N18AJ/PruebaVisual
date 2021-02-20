@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="application-name" content="Sitio Web">
+        <meta name="description" content="Desarrollo del segundo curso de DAW">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Favicon -->
+        <link rel="icon" href="../favicon.png" type="x-icon">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            tr:hover{
+                filter: drop-shadow(2px 2px 2px #ffffff);
+            }
+            button {
+                width: 185px;
+                height: 30px;
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 12pt;
+                margin-left:10px;
+            }
+        </style>
+<!-- JS -->        
+        <script src="../../../js/tema3/practica06/script.js"> </script>       
+    </head>
+
+    <body> 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+
+
+<!-- Main -->
+        <div id="main">
+              
+        <!-- Tiles -->
+            <section class="tiles">
+                 <!-- NAV -->
+                <nav class="segunda_header" id="menu">
+                    <ul>
+                        <li><a href="../index.html">Tema 3</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <header class="major">
+                        <h3>Practica 06</h3>
+                    </header>
+                    <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    <p>
+                        Ejercicio1:<br>
+                        • Comprueba que una de las ventanas de la Práctica 05, está abierta/cerrada con la propiedad
+                        “closed”. Es decir, en uno de los ejercicios que abras una ventana nueva y la cierres con otro botón,
+                        programa otra botón que te permita comprobar si esa ventana se ha cerrado o no.<br><br>
+                            <button type="button" onclick="myBoton1()">Abrir Ventana</button><br>
+                            <button type="button" onclick="myBoton2()">Cerrar Ventana</button><br>
+                            <button type="button" onclick="datoVentana()">Dato</button>
+                    </p>
+                    <p>
+                        Ejercicio 2: Crea un script que abra 1 ventana nueva en blanco pulsando un botón en el HTML principal.
+                        Debes de añadir a mayores un botón en el HTML principal que permita mover la ventana por la pantalla
+                        (los valores invéntalos tu).<br><br>
+                            <button type="button" onclick="moverBoton()">Mover</button><br>
+                    </p>
+                    <p>
+                        Ejercicio 3:Crea un script que después de pulsar un botón en el documento HTML, cuente 5 segundos y
+                        muestre por pantalla “Han pasado 5 segundos”. Debe de aparecer el mensaje “Han pasado 5 segundos”
+                        cada 5 segundos hasta que pulse un botón “Parar” que para el temporizador y deja de mostrar el mensaje.<br><br>
+                            <button type="button" onclick="segBoton()">5 s</button><br>
+                            <button type="button" onclick="finSegBoton()">Fin 5 s</button><br>
+                    </p>
+                    <p>
+                        Ejercicio 4: Crea un script que permita activar un temporizador desde 0 al pulsar un botón y empiece a
+                        contar ascendentemente (0, 1, 2….) sin límite. Debe de aparecer otro botón que pare el temporizador al
+                        pulsarlo (es decir, dejen de aparecer números y se pare de contar). Después de pulsar el botón de “parar”
+                        debe de mostrar por pantalla el número más alto al que ha llegado contando.<br><br>
+                        <button type="button" onclick="contadorBoton()">Crono</button><br>
+                            <button type="button" onclick="finContadorBoton()">Parar</button><br>
+                    </p>
+                    <p>
+                        Ejercicio 5: Crea un script que visualice una cuenta atrás empezando en 1 minuto. Es decir, tiene que
+                        empezar en 01:00, 00:59, 00:58, 00:57 … así hasta 00:00. Cuando acabe el tiempo muestra por pantalla:
+                        ¡Tiempo agotado!<br><br>
+                        <button type="button" onclick="fReloj()">1 min</button>
+                        
+                        <span id="reloj"></span>
+                    </p>
+                </article>
+                
+            </section>
+        </div>
+
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>

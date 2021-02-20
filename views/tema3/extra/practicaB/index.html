@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="Nerea Álvarez Justel">
+        <meta name="robots" content="index, follow" />
+            <title>DAW. Nerea Álvarez Justel</title>
+<!-- CSS -->
+        <link href="../../../../css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Tipografía -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+        <style>
+            tr:hover{
+                filter: drop-shadow(2px 2px 2px #ffffff);
+            }
+            button {
+                width: 185px;
+                height: 30px;
+                text-align: center;
+                margin-bottom: 15px;
+                font-size: 12pt;
+                margin-left:10px;
+            }
+            #reloj{
+                font-size: 30pt;
+                border: 2px solid white;
+                padding: 15px;
+            }
+             #muestra{
+                font-size: 30pt;
+                border: 2px solid white;
+                padding: 15px;
+            }
+        </style>
+<!-- JS -->        
+        <script src="../../../../js/tema3/extra/practicaB/script.js" type="text/javascript"></script>       
+    </head>
+
+    <body> 
+<!-- Header -->
+        <header id="header">
+            <a href="../doc/cv.pdf" target="_blank"><img src="../../../../assets/images/cv.png" alt="LinkedIn" width="55" class="icono_link"/></a>
+            <a href="../index.html"><img src="../../../../assets/images/logo.png" alt="Logo" width="150" class="icono_logo"/></a>
+            <a href="https://github.com/N18AJ" target="_blank"><img src="../../../../assets/images//git.png" alt="GitHub" width="65" class="icono_git"/></a>
+        </header>
+ 
+    <!-- Tiles -->
+        <section class="tiles">
+             <!-- NAV -->
+            <nav class="segunda_header" id="menu">
+                <ul>
+                    <li><a href="../index.html">Tema 3</a></li>
+                </ul>
+            </nav>
+            <article>
+                <header class="major">
+                    <h3>Practica B</h3>
+                </header>
+                <h1>Nerea Álvarez Justel - nerea.alvjus@educa.jcyl.es</h1>
+                    <p>
+                        Ejercicio 1. Crea un script que al pulsar en un botón se abran a la vez 5 ventanas “vacías”. Luego crea varios botones que recarguen páginas web/documentos web diferentes en cada una de las ventanas. 
+                        Por ejemplo: en la ventana 1 que cargue Google, en la ventana 2 un documento html almacenado en el equipo, en la ventana 3 la página del ayuntamiento de Benavente y así sucesivamente…<br>
+                        Luego permite que el script cierre una ventana en concreto. Pídele al usuario que te diga qué ventana quiere cerrar y ciérrala.
+                    </p>
+                    <button type="button" onclick="myBoton1()">5 ventanas</button><br>
+                    <button type="button" onclick="ventanaBoton1()">1º ventanas</button>
+                    <button type="button" onclick="ventanaBoton2()">2º ventanas</button>
+                    <button type="button" onclick="ventanaBoton3()">3º ventanas</button>
+                    <button type="button" onclick="ventanaBoton4()">4º ventanas</button>
+                    <button type="button" onclick="ventanaBoton5()">5º ventanas</button><br>
+                    <button type="button" onclick="opcionCierre()">Cerrar</button>
+                    <p>
+                        Ejercicio 2. Crea un reloj JavaScript que marque los segundos. De forma que aparezca la hora actual y se vea como van aumentando los segundos.<br>
+                        Ejemplo: Solo se puede ver cómo cambian los segundos en un único reloj (10:00:01, 10:002, 10:00:03…)
+                        <br>
+                        <span id="reloj"></span>
+                    </p>
+                    <p>
+                        Ejercicio 3. Crea un script que visualice un temporizador. Nada más arrancar el script debe de empezar a contar segundos en formato hora (00:00:01) en sentido ascendente.<br>
+                        Deben de aparecer los siguientes botones:<br>
+                        Botón que pare el temporizador<br>
+                        Botón que lo reinicie<br>
+                        Botón que establezca un número que empiece a contar. Por ejemplo: Se establece que empiece en 10 y el temporizador debe de empezar a contar ascendentemente en: 00:00:10
+
+                        <span id="muestra">00 : 00 : 00</span>
+                        <button type="button" onclick="start()">START</button>
+                        <button type="button" onclick="stop()">STOP</button>
+                        <button type="button" onclick="reset()">RESET </button>
+                    </p>
+            </article>
+        </section>
+<!-- Footer -->
+        <footer id="footer">
+            <div class="copyright"><a href="../index.html">&copy; Nerea Álvarez Justel</a></div>
+        </footer>
+    </body>
+</html>
